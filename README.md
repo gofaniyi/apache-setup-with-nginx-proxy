@@ -23,7 +23,7 @@ Configure nginx
 Open up the nginx configuration.
 
 ```
-sudo nano /etc/nginx/sites-available/awesome
+sudo nano /etc/nginx/sites-available/example
 ```
 
 The following configuration will set you up to use nginx as the front end server. It is very similar to the default set up, and the details are under the configuration.
@@ -32,10 +32,10 @@ The following configuration will set you up to use nginx as the front end server
 server {
         listen   80;
 
-        root /var/www/;
+        root /var/www/html;
         index index.php index.html index.htm;
 
-        server_name awesome.com;
+        server_name example.com;
 
         location / {
         try_files $uri $uri/ /index.php;
@@ -69,7 +69,7 @@ This configuration sets up a system where all extensions with a php ending are r
 Activate the virtual host.
 
 ```
-sudo ln -s /etc/nginx/sites-available/awesome /etc/nginx/sites-enabled/awesome
+sudo ln -s /etc/nginx/sites-available/example /etc/nginx/sites-enabled/example
 ```
 
 Additionally, delete the default nginx server block.
@@ -108,9 +108,12 @@ Save and Exit.
 Subsequently, open up a new virtual host file, copying the layout from the default apache file:
 
 ```
-sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/awesome
-sudo nano /etc/apache2/sites-available/awesome
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.conf
+sudo nano /etc/apache2/sites-available/example
 ```
+
+* Note: Ubuntu 13.10 ships a newer apache configuration, where the file you are looking for is named `/etc/apache2/sites-available/000-default.conf.`
+The .conf at the end, which is now required for apache to pick up on the files. So make sure the config you are creating for your site also has .conf as its extension.
 
 The main issue that needs to be addressed here is that the virtual host needs to be, once again, running on port 8080 (instead of the default 80 given to nginx).
 
@@ -123,7 +126,7 @@ The line should look like this:
 Make sure your Document Root is correct. Save and exit the file and activate that virtual host:
 
 ```
-sudo a2ensite awesome
+sudo a2ensite example
 ```
 
 Before we start testing anything out, we need to equip apache with php. Go ahead and install it now:
