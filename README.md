@@ -1,5 +1,5 @@
 ## Introduction
-Hi, this is an updated version of the [Original documentation](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-for-apache) from [DigitalOcean](https://www.digitalocean.com) posted July 20, 2012, thats 7 years ago:
+Hi, this is an updated version of the [Original documentation](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-for-apache) from [DigitalOcean](https://www.digitalocean.com) posted July 20, 2012, thats 7 years ago.
 
 ## Server(s)
 This guide was tested with
