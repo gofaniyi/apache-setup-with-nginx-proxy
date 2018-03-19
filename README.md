@@ -30,7 +30,7 @@ server {
         root /var/www/;
         index index.php index.html index.htm;
 
-        server_name example.com;
+        server_name awesome.com;
 
         location / {
         try_files $uri $uri/ /index.php;
@@ -101,8 +101,11 @@ Save and Exit.
 
 Subsequently, open up a new virtual host file, copying the layout from the default apache file:
 
-sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/example
-sudo nano /etc/apache2/sites-available/example
+```
+sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/awesome
+sudo nano /etc/apache2/sites-available/awesome
+```
+
 The main issue that needs to be addressed here is that the virtual host needs to be, once again, running on port 8080 (instead of the default 80 given to nginx).
 
 The line should look like this:
@@ -114,7 +117,7 @@ The line should look like this:
 Make sure your Document Root is correct. Save and exit the file and activate that virtual host:
 
 ```
-sudo a2ensite example
+sudo a2ensite awesome
 ```
 
 Before we start testing anything out, we need to equip apache with php. Go ahead and install it now:
