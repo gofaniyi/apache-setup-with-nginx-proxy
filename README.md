@@ -1,3 +1,4 @@
+** This is an updated version of the original documentation: https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-for-apache
 
 ## Install nginx
 To start off, we need to install and configure nginx which will serve the front end of our site.
