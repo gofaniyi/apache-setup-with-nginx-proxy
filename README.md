@@ -53,11 +53,12 @@ server {
 
 The following changes were implemented in the configuration:
 
-The root was set to the correct web directory
-index.php was added on the index line
-try_files attempts to serve whatever page the visitor requests. If nginx is unable, then the file is passed to the proxy
-proxy_pass lets nginx the address of the proxied server
-Finally the "location ~ /\.ht {" location block denies access to .htaccess files, if Apache's document root concurs with nginx's one
+* The root was set to the correct web directory
+* index.php was added on the index line
+* try_files attempts to serve whatever page the visitor requests. If nginx is unable, then the file is passed to the proxy
+* proxy_pass lets nginx the address of the proxied server
+* Finally the "location ~ /\.ht {" location block denies access to .htaccess files, if Apache's document root concurs with nginx's one
+
 This configuration sets up a system where all extensions with a php ending are rerouted to the apache backend which will run on port 8080.
 
 Activate the virtual host.
