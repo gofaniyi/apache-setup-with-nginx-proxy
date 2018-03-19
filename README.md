@@ -109,7 +109,7 @@ Subsequently, open up a new virtual host file, copying the layout from the defau
 
 ```
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.conf
-sudo nano /etc/apache2/sites-available/example
+sudo nano /etc/apache2/sites-available/example.conf
 ```
 
 * Note: Ubuntu 13.10+ ships a newer apache configuration, where the file you are looking for is named `/etc/apache2/sites-available/000-default.conf.`
