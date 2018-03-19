@@ -119,8 +119,7 @@ Subsequently, open up a new virtual host file, copying the layout from the defau
 sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/example.conf
 ```
 
-* Note: Ubuntu 13.10+ ships a newer apache configuration, where the file you are looking for is named `/etc/apache2/sites-available/000-default.conf.`
-The `.conf` at the end, which is now required for apache to pick up on the files. So make sure the config you are creating for your site also has `.conf` as its extension.
+* Note: Ubuntu 13.10+ ships a newer apache configuration. The `.conf` at the end of the file is now required for apache to pick up on the files. So make sure your config file for your site has the `.conf` as its extension.
 
 ```
 sudo nano /etc/apache2/sites-available/example.conf
