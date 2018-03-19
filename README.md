@@ -18,7 +18,7 @@ Configure nginx
 Open up the nginx configuration.
 
 ```
-sudo nano /etc/nginx/sites-available/awesome
+sudo nano /etc/nginx/sites-available/awesome.conf
 ```
 
 The following configuration will set you up to use nginx as the front end server. It is very similar to the default set up, and the details are under the configuration.
@@ -64,7 +64,7 @@ This configuration sets up a system where all extensions with a php ending are r
 Activate the virtual host.
 
 ```
-sudo ln -s /etc/nginx/sites-available/awesome /etc/nginx/sites-enabled/awesome
+sudo ln -s /etc/nginx/sites-available/awesome.conf /etc/nginx/sites-enabled/awesome.conf
 ```
 
 Additionally, delete the default nginx server block.
@@ -103,7 +103,7 @@ Save and Exit.
 Subsequently, open up a new virtual host file, copying the layout from the default apache file:
 
 ```
-sudo cp /etc/apache2/sites-available/default /etc/apache2/sites-available/awesome
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/awesome
 sudo nano /etc/apache2/sites-available/awesome
 ```
 
