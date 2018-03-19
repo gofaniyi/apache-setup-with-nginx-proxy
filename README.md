@@ -176,4 +176,4 @@ Save and exit.
 * Extend this guide to more servers CentOs, Fedora, etc.
 
 ## Conclusion
-Thanks to DigitalOcean[http://www.digitalocean.com] for all the ease they have brought to our world.
+Thanks to [DigitalOcean](http://www.digitalocean.com) for all the ease they have brought to our world.
