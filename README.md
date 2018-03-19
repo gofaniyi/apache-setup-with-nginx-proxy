@@ -156,7 +156,7 @@ Paste the following lines into that file:
 
 ```
 <?php
-phpinfo( );
+phpinfo();
 ?>
 ```
 
