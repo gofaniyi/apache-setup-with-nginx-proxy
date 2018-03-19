@@ -112,7 +112,7 @@ sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-availab
 sudo nano /etc/apache2/sites-available/example
 ```
 
-* Note: Ubuntu 13.10 ships a newer apache configuration, where the file you are looking for is named `/etc/apache2/sites-available/000-default.conf.`
+* Note: Ubuntu 13.10+ ships a newer apache configuration, where the file you are looking for is named `/etc/apache2/sites-available/000-default.conf.`
 The .conf at the end, which is now required for apache to pick up on the files. So make sure the config you are creating for your site also has .conf as its extension.
 
 The main issue that needs to be addressed here is that the virtual host needs to be, once again, running on port 8080 (instead of the default 80 given to nginx).
@@ -148,11 +148,16 @@ We have set up the VPS with nginx running on the front end of our site and apach
 We can check that information is being routed to apache is working by running a common php script.
 
 Go ahead and create the php.info file:
-
+```
 sudo nano /var/www/info.php
+```
+
 Paste the following lines into that file:
 
-<?
+```
+<?php
 phpinfo( );
 ?>
+```
+
 Save and exit.
