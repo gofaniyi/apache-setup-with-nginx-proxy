@@ -1,6 +1,8 @@
 ** This is an updated version of the original documentation: https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-for-apache
 
-This guide below works with Ubuntu Server 16+
+## Server
+This guide below works with
+* Ubuntu Server 16.04.4 x64
 
 ## Install nginx
 To start off, we need to install and configure nginx which will serve the front end of our site.
