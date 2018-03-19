@@ -4,9 +4,16 @@ Hi, this is an updated version of the original documentation: https://www.digita
 ## Server(s)
 This guide was tested with
 * Ubuntu Server 16.04.4 x64
+* Debian
 
 ## Install nginx
 To start off, we need to install and configure nginx which will serve the front end of our site.
+
+* For Debian
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
 
 Let’s download it from apt-get:
 
