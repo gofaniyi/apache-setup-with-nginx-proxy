@@ -113,7 +113,7 @@ sudo nano /etc/apache2/sites-available/example
 ```
 
 * Note: Ubuntu 13.10+ ships a newer apache configuration, where the file you are looking for is named `/etc/apache2/sites-available/000-default.conf.`
-The .conf at the end, which is now required for apache to pick up on the files. So make sure the config you are creating for your site also has .conf as its extension.
+The `.conf` at the end, which is now required for apache to pick up on the files. So make sure the config you are creating for your site also has `.conf` as its extension.
 
 The main issue that needs to be addressed here is that the virtual host needs to be, once again, running on port 8080 (instead of the default 80 given to nginx).
 
