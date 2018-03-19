@@ -1,5 +1,5 @@
 ## Introduction
-Hi, this is an updated version of the original documentation: https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-for-apache
+Hi, this is an updated version of the [Original documentation](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-reverse-proxy-for-apache) from [DigitalOcean](https://www.digitalocean.com) posted July 20, 2012, thats 7 years ago:
 
 ## Server(s)
 This guide was tested with
@@ -176,4 +176,4 @@ Save and exit.
 * Extend this guide to more servers CentOs, Fedora, etc.
 
 ## Conclusion
-Thanks to [DigitalOcean](http://www.digitalocean.com) for all the ease they have brought to our world.
+Thanks to [DigitalOcean](https://www.digitalocean.com) for all the ease they have brought to our world.
