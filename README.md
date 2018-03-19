@@ -142,7 +142,7 @@ sudo service apache2 restart
 sudo service nginx restart
 ```
 
-Finish Up
+## Finish Up
 We have set up the VPS with nginx running on the front end of our site and apache processing php on the back end. Loading our domain will take us to our site’s default page.
 
 We can check that information is being routed to apache is working by running a common php script.
