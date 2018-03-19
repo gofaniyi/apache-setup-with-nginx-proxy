@@ -149,7 +149,7 @@ We can check that information is being routed to apache is working by running a 
 
 Go ahead and create the php.info file:
 ```
-sudo nano /var/www/info.php
+sudo nano /var/www/html/info.php
 ```
 
 Paste the following lines into that file:
