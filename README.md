@@ -3,8 +3,8 @@ Hi, this is an updated version of the original documentation: https://www.digita
 
 ## Server(s)
 This guide was tested with
-* Ubuntu Server 16.04.4 x64
-* Debian
+* Ubuntu 16.04.4 x64
+* Debian 9.4 x64
 
 ## Before you start
 * Debian
@@ -169,3 +169,6 @@ phpinfo();
 ```
 
 Save and exit.
+
+## To Do
+* Extend this guide to more servers CentOs, Fedora, etc.
